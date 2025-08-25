@@ -28,8 +28,8 @@ export class MapView {
       this.map = L.map("map-container").setView(center, 15);
     } else {
       this.map = L.map("map-container").setView(
-        [-7.711361976168338, 110.3525845328189],
-        15
+        [-7.721768493563009, 110.35871835788771],
+        18
       );
     }
 
