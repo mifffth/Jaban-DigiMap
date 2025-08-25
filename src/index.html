@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="WebGIS interaktif administrasi Padukuhan Jaban Kalurahan Tridadi, Sleman, Daerah Istimewa Yogyakarta" />
+  <title>Jaban DigiMap</title>
+
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="manifest" href="app.webmanifest" />
+  <link rel="icon" href="icons/favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+
+  <script>
+    if (!document.startViewTransition) {
+      document.startViewTransition = (cb) => {
+        cb();
+        return Promise.resolve();
+      };
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header>
+    <a href="javascript:void(0)" class="skip-link">Lewati ke konten utama</a>
+
+    <div class="header-container" style="padding-inline: 1rem; max-width: 1280px; margin-inline: auto;">
+      <h1 class="site-title text-white ml-4">Jaban DigiMap</h1>
+
+      <button id="menu-toggle" class="hamburger mr-4" aria-label="Navigasi halaman">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="nav-links">
+        <a href="#/map">Peta</a>
+        <a href="#/credit">Kredit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1" class="flex-grow">
+
+  </main>
+
+  <footer id="site-footer" class="text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+      <div class="flex space-x-6 text-2xl mt-2">
+        <a href="https://www.instagram.com/dezzzma_/" target="_blank" aria-label="Instagram"
+          class="text-white hover:text-white transition-transform transform hover:scale-110">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="mailto:miftahdesmasyahputra@mail.ugm.ac.id" target="_blank" aria-label="Email"
+          class="text-white hover:text-white transition-transform transform hover:scale-110">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+      <p class="text-sm text-center tracking-wide mb-2 mt-2">Miftah Desma S., 2025</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const nav = document.getElementById("main-nav");
+
+    toggleBtn.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+
+    document
+      .querySelectorAll("#main-nav a, #main-nav button")
+      .forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 640) {
+            nav.classList.remove("show");
+          }
+        });
+      });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "RTRW_Jaban_Pt",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "RTRW": "RT 01", "Tipe": "RT", "Nama": "Bapak Thomas", "Latitude": -7.7228103722758084, "Longitude": 110.35805103843609 }, "geometry": { "type": "Point", "coordinates": [ 110.358051038436088, -7.722810372275808 ] } },
+{ "type": "Feature", "properties": { "RTRW": "RT 02", "Tipe": "RT", "Nama": "Bapak Suparlan", "Latitude": -7.7217263326812713, "Longitude": 110.35796406636578 }, "geometry": { "type": "Point", "coordinates": [ 110.357964066365781, -7.721726332681271 ] } },
+{ "type": "Feature", "properties": { "RTRW": "RT 03", "Tipe": "RT", "Nama": "Ibu Kristiningsih", "Latitude": -7.7238760400461688, "Longitude": 110.3590794168859 }, "geometry": { "type": "Point", "coordinates": [ 110.359079416885905, -7.723876040046169 ] } },
+{ "type": "Feature", "properties": { "RTRW": "RT 04", "Tipe": "RT", "Nama": "Bapak Sugimin", "Latitude": -7.7223293752116255, "Longitude": 110.35864085149322 }, "geometry": { "type": "Point", "coordinates": [ 110.35864085149322, -7.722329375211626 ] } },
+{ "type": "Feature", "properties": { "RTRW": "RT 05", "Tipe": "RT", "Nama": "Bapak Tawami", "Latitude": -7.7227761464870328, "Longitude": 110.35982742264106 }, "geometry": { "type": "Point", "coordinates": [ 110.359827422641061, -7.722776146487033 ] } },
+{ "type": "Feature", "properties": { "RTRW": "RT 06", "Tipe": "RT", "Nama": "Bapak Ponijo Iswanto", "Latitude": -7.7219212538742674, "Longitude": 110.35919337223882 }, "geometry": { "type": "Point", "coordinates": [ 110.359193372238821, -7.721921253874267 ] } },
+{ "type": "Feature", "properties": { "RTRW": "RW 33", "Tipe": "RW", "Nama": "Bapak Sumiriyadi", "Latitude": -7.7239697630247104, "Longitude": 110.35906342908288 }, "geometry": { "type": "Point", "coordinates": [ 110.35906342908288, -7.72396976302471 ] } },
+{ "type": "Feature", "properties": { "RTRW": "RW 34", "Tipe": "RW", "Nama": "Bapak Sudiyarto", "Latitude": -7.7220919685056524, "Longitude": 110.35970412972848 }, "geometry": { "type": "Point", "coordinates": [ 110.359704129728485, -7.722091968505652 ] } },
+{ "type": "Feature", "properties": { "RTRW": "RW 42", "Tipe": "RW", "Nama": "Bapak Sulistyo", "Latitude": -7.7222794309544547, "Longitude": 110.35806645662515 }, "geometry": { "type": "Point", "coordinates": [ 110.358066456625153, -7.722279430954455 ] } },
+{ "type": "Feature", "properties": { "RTRW": "Ketua Padukuhan", "Tipe": "Ketua Dukuh", "Nama": "Bapak Iriyanto", "Latitude": -7.7226875547651801, "Longitude": 110.35898041014964 }, "geometry": { "type": "Point", "coordinates": [ 110.358980410149641, -7.72268755476518 ] } }
+]
+}
